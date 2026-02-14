@@ -1,0 +1,5 @@
+# DO NOT MESS WITH THIS FILE
+# This .gitignore is meant to prevent the accidental commit of non-free firmware
+*
+!*.md
+!LICENSE

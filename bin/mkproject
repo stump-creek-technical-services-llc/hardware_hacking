@@ -1,0 +1,46 @@
+#!/usr/bin/env sh
+set -e
+set -x
+
+GIT_DIR=$(git rev-parse --show-toplevel)
+echo ${GIT_DIR}
+
+SUBMODULE_NAME=${1}
+if [ -n "${SUBMODULE_NAME}"]
+then
+  echo "Module name is required, and should be of the form: (Manufacturer)_(ProductName)_(ProductCode)_v(Version)"
+  exit 1
+fi
+
+SUBMODULE_REPO_NAME_PREFIX=hardware_hacking_
+SUBMODULE_REPO_NAME=${SUBMODULE_REPO_NAME_PREFIX}${SUBMODULE_NAME}
+
+echo "Create the following submodule on GitHub with at least one commit:
+${SUBMODULE_REPO_NAME}
+
+Press enter to continue."
+read
+
+SUBMODULE_URL_PREFIX=git@github.com:stump-creek-technical-services-llc/
+SUBMODULE_URL=${SUBMODULE_URL_PREFIX}${SUBMODULE_REPO_NAME}.git
+SUBMODULE_PATH=${GIT_DIR}/devices/${SUBMODULE_NAME}
+
+cd "${GIT_DIR}/devices"
+
+# This command is `|| true` because GitHub repos are created without commits, and that trips up this command
+git submodule add "${SUBMODULE_URL}" "${SUBMODULE_NAME}"
+
+cd "${SUBMODULE_NAME}"
+
+# Setup personal per-repo configs
+if [ "${USER}" == mstoops ]
+then
+  configure_git_repo
+fi
+
+cp -R "${GIT_DIR}/devices/template/." "${SUBMODULE_PATH}"
+
+echo "# ${SUBMODULE_NAME}" | sed "s/_/ /g" > README.md
+
+git -C "${SUBMODULE_PATH}" add README.md
+git -C "${SUBMODULE_PATH}" commit -m "Initial commit"

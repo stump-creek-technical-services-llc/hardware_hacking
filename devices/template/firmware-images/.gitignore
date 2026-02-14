@@ -1,0 +1,7 @@
+# DO NOT MESS WITH THIS FILE
+# DO NOT PUT FIRMWARE IN THIS DIRECTORY
+# Only put symbolic links to free firmware in the firmware-images-free directory.
+# This .gitignore is meant to prevent the accidental commit of non-free firmware,
+# and ensure that the repo links to any available free firmware.
+*
+!*.md
