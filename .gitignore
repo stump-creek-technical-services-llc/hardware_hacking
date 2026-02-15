@@ -6,4 +6,4 @@ firmware-copyrighted/
 # and thus will error out when others run `git clone --recursive`.
 # When you really need to update `.gitmodules`, ensure that it doesn't include firmware-copyrighted,
 # and use `git add -f` to add it to your commit. Don't remove it from `.gitignore`.
-.gitmodules
+.gitmodules*

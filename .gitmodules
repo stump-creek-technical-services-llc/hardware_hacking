@@ -1,0 +1,3 @@
+[submodule "devices/Linksys_E2500_v3"]
+	path = devices/Linksys_E2500_v3
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Linksys_E2500_v3.git
