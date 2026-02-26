@@ -5,3 +5,4 @@
 # and ensure that the repo links to any available free firmware.
 *
 !*.md
+!Makefile
