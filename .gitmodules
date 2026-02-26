@@ -10,3 +10,6 @@
 [submodule "devices/eero_Pro_B010001"]
 	path = devices/eero_Pro_B010001
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_eero_Pro_B010001.git
+[submodule "devices/NETGEAR_R6120"]
+	path = devices/NETGEAR_R6120
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_NETGEAR_R6120.git
