@@ -1,0 +1,51 @@
+#!/usr/bin/env sh
+set -e  # exit immediately if any command fails
+set -u  # unset variables are errors
+set -o pipefail  # pipeline fails if any command fails
+#set -x # show everything
+
+# Reads a SPI flash ROM on Mac
+USAGE="usage:\n  read_spi_flash_mac DEVICE_ID.bin"
+
+if [[ "${#}" -lt 1 ]]
+then
+  echo "${USAGE}"
+  exit 1
+fi
+
+SERPROG_DEV=$(serprog_dev)
+if [[ -z "${SERPROG_DEV}" ]]
+then
+  echo "Unable to find serprog device."
+  exit 1
+fi
+
+SPISPEED=5M
+
+if [ -z "${FLASHROM_ARGS+x}" ]
+then
+  FLASHROM_ARGS=""
+fi
+
+FILENAME=${1}
+VERIFICATION_FILENAME=${FILENAME}.verification
+shift
+
+echo "Reading flash, first pass"
+echo ---------
+flashrom -p serprog:dev=${SERPROG_DEV},spispeed=${SPISPEED} -V -r ${FILENAME} ${FLASHROM_ARGS}
+echo ---------
+echo "Reading flash, verification pass"
+echo ---------
+flashrom -p serprog:dev=${SERPROG_DEV},spispeed=${SPISPEED} -V -r ${VERIFICATION_FILENAME}  ${FLASHROM_ARGS}
+echo ---------
+
+if diff ${FILENAME} ${VERIFICATION_FILENAME}
+then
+  echo "Good read."
+  rm ${VERIFICATION_FILENAME}
+else
+  echo "Bad read, try again."
+  rm ${FILENAME} ${VERIFICATION_FILENAME}
+fi
+

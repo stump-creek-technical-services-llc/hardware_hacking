@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+set -e  # exit immediately if any command fails
+set -u  # unset variables are errors
+set -o pipefail  # pipeline fails if any command fails
+#set -x # show everything
+
+# Outputs the path of the device that is a Pico serprog
+
+# Vendor ID: Raspberry Pi
+VID=0x2e8a
+# Product ID: Pico
+PID=0x000a
+# It would probably be nice if this were a bit more specific to serprog
+
+# Get the MacOS USB device tree, in JSON form
+# And return the object with the matching VID and PID
+# Then take its location ID string, e.g. "0x02140000 / 11"
+# Strip off the plug number, e.g. 0x02140000
+# Strip of the "0x", e.g. 2140000
+# Convert trailing 00... to 01, e.g. 21401
+DEV_ID=$(system_profiler -json SPUSBDataType \
+           | jq -r ".. | objects | select(.product_id == \"${PID}\" and .vendor_id == \"${VID}\") | .location_id" \
+           | cut -w -f1 \
+           | xargs printf "%x\n" \
+           | sed -E "s/0{2,}$/01/")
+
+# It's the file matching this pattern, e.g. /dev/tty.usbmodem21401
+ls /dev/tty.usb*${DEV_ID}
