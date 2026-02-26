@@ -7,3 +7,6 @@
 [submodule "devices/Arris_Surfboard_SBG6700_591330-011"]
 	path = devices/Arris_Surfboard_SBG6700_591330-011
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Arris_Surfboard_SBG6700_591330-011.git
+[submodule "devices/eero_Pro_B010001"]
+	path = devices/eero_Pro_B010001
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_eero_Pro_B010001.git
