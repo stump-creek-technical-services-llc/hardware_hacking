@@ -1,0 +1,1 @@
+PATH="$(git rev-parse --show-toplevel)"/bin:"${PATH}"

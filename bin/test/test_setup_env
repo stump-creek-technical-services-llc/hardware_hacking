@@ -1,0 +1,57 @@
+#!/usr/bin/env sh
+
+# Test setup_env
+set -e  # exit immediately if any command fails
+set -u  # unset variables are errors
+set -o pipefail  # pipeline fails if any command fails
+set -x # show everything
+
+GIT_DIR=$(git rev-parse --show-toplevel)
+
+TMP="$(mktemp -d)"
+echo Temp dir is "${TMP}"
+echo "To clean it up, run:"
+echo "rm -rf ${TMP}"
+
+
+# capture the original path env var
+env | tr ":" "\n" > "${TMP}/orig"
+
+# execute the script
+source "${GIT_DIR}/bin/env.sh"
+
+# capture the altered path env var
+env | tr ":" "\n" > "${TMP}/alt"
+
+# capture diff
+diff "${TMP}/orig" "${TMP}/alt" > "${TMP}/diff" || true
+
+# extract line 4
+sed -n "4p" "${TMP}/diff" > "${TMP}/diff.line.actual"
+
+# assert
+ACTUAL_LINES=$(wc -l "${TMP}/diff" | cut -w -f2)
+if [[ 5 -ne ${ACTUAL_LINES} ]]; then
+    echo "The diff was not the expected length."
+    echo
+    cat "${TMP}/diff"
+    echo
+    echo "Didn't clean up the temp dir so you can see what happened."
+    exit 1
+fi
+
+echo "> PATH=${GIT_DIR}/bin"> "${TMP}/diff.line.expected"
+if diff -q "${TMP}/diff.line.actual" "${TMP}/diff.line.expected" > /dev/null; then
+    echo "PATH is modified as expected"
+else
+    echo "PATH is not modified as expected."
+    echo
+    cat "${TMP}/diff"
+    echo
+    echo "Didn't clean up the temp dir so you can see what happened."
+    exit 1
+fi
+
+# clean up
+#rm -rf "${TMP}"
+echo Cleaned up
