@@ -1,3 +1,9 @@
 [submodule "devices/Linksys_E2500_v3"]
 	path = devices/Linksys_E2500_v3
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Linksys_E2500_v3.git
+[submodule "devices/Linksys_WRT160N_v3"]
+	path = devices/Linksys_WRT160N_v3
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Linksys_WRT160N_v3.git
+[submodule "devices/Arris_Surfboard_SBG6700_591330-011"]
+	path = devices/Arris_Surfboard_SBG6700_591330-011
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Arris_Surfboard_SBG6700_591330-011.git
