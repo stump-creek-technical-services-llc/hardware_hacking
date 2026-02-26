@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+set -e  # exit immediately if any command fails
+set -u  # unset variables are errors
+set -o pipefail  # pipeline fails if any command fails
+set -x # show everything
+
+exiftool -all= -overwrite_original ${@}
