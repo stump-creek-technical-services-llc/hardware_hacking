@@ -16,3 +16,6 @@
 [submodule "devices/SONY_CD_DVD_Player_DVP-NF575P"]
 	path = devices/SONY_CD_DVD_Player_DVP-NF575P
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_SONY_CD_DVD_Player_DVP-NF575P.git
+[submodule "devices/SONY_BLU-RAY_Disc_DVD_Player_BDP-S580"]
+	path = devices/SONY_BLU-RAY_Disc_DVD_Player_BDP-S580
+	url = git@github.com:stump-creek-technical-services-llc/SONY_BLU-RAY_DISC_DVD_PLAYER_BDP-S580.git

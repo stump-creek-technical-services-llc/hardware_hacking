@@ -40,7 +40,9 @@ Input Voltage: XX VDC: XX A
 
 Opening
 
-Boards
+### Boards
+
+#### Mainboard
 
 ### Chips
 

@@ -1,0 +1,7 @@
+# DO NOT MESS WITH THIS FILE
+# This directory is for analysis of firmware.
+# This .gitignore is meant to prevent the accidental commit of non-free firmware,
+# and ensure that the repo links to any available free firmware.
+*
+!*.md
+!Makefile
