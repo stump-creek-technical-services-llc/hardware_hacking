@@ -1,7 +1,15 @@
 #!/usr/bin/env sh
 set -e  # exit immediately if any command fails
 set -u  # unset variables are errors
-set -o pipefail  # pipeline fails if any command fails
+if uname -o | grep "Linux"
+then
+  # No pipefail on Linux
+  true
+
+else
+  set -o pipefail  # pipeline fails if any command fails
+
+fi
 set -x # show everything
 
 xxd "${1}" > "${1}.hex"
