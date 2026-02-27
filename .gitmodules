@@ -13,3 +13,6 @@
 [submodule "devices/NETGEAR_R6120"]
 	path = devices/NETGEAR_R6120
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_NETGEAR_R6120.git
+[submodule "devices/SONY_CD_DVD_Player_DVP-NF575P"]
+	path = devices/SONY_CD_DVD_Player_DVP-NF575P
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_SONY_CD_DVD_Player_DVP-NF575P.git
