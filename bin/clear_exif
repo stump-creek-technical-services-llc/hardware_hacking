@@ -1,7 +1,11 @@
 #!/usr/bin/env sh
 set -e  # exit immediately if any command fails
 set -u  # unset variables are errors
-set -o pipefail  # pipeline fails if any command fails
+if uname -o | grep "Darwin"
+then
+  set -o pipefail  # pipeline fails if any command fails
+
+fi
 set -x # show everything
 
 exiftool -all= -overwrite_original ${@}

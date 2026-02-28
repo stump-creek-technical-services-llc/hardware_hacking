@@ -1,7 +1,11 @@
 #!/usr/bin/env sh
 set -e  # exit immediately if any command fails
 set -u  # unset variables are errors
-set -o pipefail  # pipeline fails if any command fails
+if uname -o | grep "Darwin"
+then
+  set -o pipefail  # pipeline fails if any command fails
+
+fi
 #set -x # show everything
 
 # Reads a SPI flash ROM on Mac
@@ -20,7 +24,10 @@ then
   exit 1
 fi
 
-SPISPEED=5M
+if [ ! -n "${var:+set}" ]
+then
+  SPISPEED=5M
+fi
 
 if [ -z "${FLASHROM_ARGS+x}" ]
 then
@@ -48,4 +55,3 @@ else
   echo "Bad read, try again."
   rm ${FILENAME} ${VERIFICATION_FILENAME}
 fi
-

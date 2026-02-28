@@ -1,12 +1,8 @@
 #!/usr/bin/env sh
 set -e  # exit immediately if any command fails
 set -u  # unset variables are errors
-if uname -o | grep "Linux"
+if uname -o | grep "Darwin"
 then
-  # No pipefail on Linux
-  true
-
-else
   set -o pipefail  # pipeline fails if any command fails
 
 fi
