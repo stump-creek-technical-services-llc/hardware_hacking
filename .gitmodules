@@ -19,3 +19,12 @@
 [submodule "devices/SONY_BLU-RAY_Disc_DVD_Player_BDP-S580"]
 	path = devices/SONY_BLU-RAY_Disc_DVD_Player_BDP-S580
 	url = git@github.com:stump-creek-technical-services-llc/SONY_BLU-RAY_DISC_DVD_PLAYER_BDP-S580.git
+[submodule "devices/Amazon_CloudCam_PB40JL"]
+	path = devices/Amazon_CloudCam_PB40JL
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Amazon_CloudCam_PB40JL.git
+[submodule "devices/template"]
+	path = devices/template
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_template.git
+[submodule "devices/ROHM_3RUS1WTBU"]
+	path = devices/YOGASLEEP_ROHM_3RUS1WTBU
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_ROHM_3RUS1WTBU.git
