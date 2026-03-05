@@ -25,6 +25,6 @@
 [submodule "devices/template"]
 	path = devices/template
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_template.git
-[submodule "devices/ROHM_3RUS1WTBU"]
+[submodule "devices/YOGASLEEP_ROHM_3RUS1WTBU"]
 	path = devices/YOGASLEEP_ROHM_3RUS1WTBU
-	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_ROHM_3RUS1WTBU.git
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_YOGASLEEP_ROHM_3RUS1WTBU.git
