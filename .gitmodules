@@ -28,3 +28,6 @@
 [submodule "devices/YOGASLEEP_ROHM_3RUS1WTBU"]
 	path = devices/YOGASLEEP_ROHM_3RUS1WTBU
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_YOGASLEEP_ROHM_3RUS1WTBU.git
+[submodule "devices/Mystery_Wireless_Doorbell"]
+	path = devices/Mystery_Wireless_Doorbell
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Mystery_Wireless_Doorbell.git
