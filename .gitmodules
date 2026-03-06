@@ -31,3 +31,6 @@
 [submodule "devices/Mystery_Wireless_Doorbell"]
 	path = devices/Mystery_Wireless_Doorbell
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Mystery_Wireless_Doorbell.git
+[submodule "devices/HoMedics_SoundSpa_SS-2000A"]
+	path = devices/HoMedics_SoundSpa_SS-2000A
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_HoMedics_SoundSpa_SS-2000A.git
