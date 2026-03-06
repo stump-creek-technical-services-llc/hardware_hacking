@@ -34,3 +34,6 @@
 [submodule "devices/HoMedics_SoundSpa_SS-2000A"]
 	path = devices/HoMedics_SoundSpa_SS-2000A
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_HoMedics_SoundSpa_SS-2000A.git
+[submodule "devices/iHome_iP97"]
+	path = devices/iHome_iP97
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_iHome_iP97.git
