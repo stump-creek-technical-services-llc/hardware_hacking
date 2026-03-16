@@ -4,23 +4,9 @@ OS="$(uname -s)"
 case ${OS} in
   Darwin)
     echo Mac
-
-    # Add GNU utils to path
-    COREUTILS_PATH="$(brew --prefix --installed coreutils)/libexec/gnubin"
-    echo "Prepending coreutils to PATH: ${COREUTILS_PATH}"
-
-    # Add other GNU package to path
-    for PACKAGE in awk file
-    do
-      PACKAGE_PATH="$(brew --prefix --installed ${PACKAGE})/bin"
-      echo "Prepending ${PACKAGE} to PATH: ${PACKAGE_PATH}"
-      export PATH="${PACKAGE_PATH}:${PATH}"
-    done
-
-    export PATH="${COREUTILS_PATH}:${PATH}"
     ;;
   Linux)
-    echo linux
+    echo Linux
     ;;
   *)
     echo "Operating system not recognized: \"${OS}\""
