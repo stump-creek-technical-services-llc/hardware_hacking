@@ -46,3 +46,6 @@
 [submodule "devices/VTech_RM5752"]
 	path = devices/VTech_RM5752
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_VTech_RM5752.git
+[submodule "devices/Wemo_Mini_F7C063"]
+	path = devices/Wemo_Mini_F7C063
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Wemo_Mini_F7C063.git
