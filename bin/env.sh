@@ -16,3 +16,6 @@ esac
 # Add local bin to path
 echo "Prepending ${HARDWARE_HACKING_ROOT}/bin to PATH"
 export PATH="${HARDWARE_HACKING_ROOT}/bin:${PATH}"
+
+# Make screen check the local dir for .screenrc
+export SCREENRC=".screenrc"
