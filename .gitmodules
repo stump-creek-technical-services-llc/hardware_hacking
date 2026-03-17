@@ -43,3 +43,6 @@
 [submodule "tools/flashrom"]
 	path = tools/flashrom
 	url = git@github.com:stump-creek-technical-services-llc/flashrom.git
+[submodule "devices/VTech_RM5752"]
+	path = devices/VTech_RM5752
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_VTech_RM5752.git
