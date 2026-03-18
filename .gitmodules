@@ -49,3 +49,6 @@
 [submodule "devices/Wemo_Mini_F7C063"]
 	path = devices/Wemo_Mini_F7C063
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Wemo_Mini_F7C063.git
+[submodule "devices/Dell_PowerEdge_Servers"]
+	path = devices/Dell_PowerEdge_Servers
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Dell_PowerEdge_Servers.git
