@@ -52,3 +52,6 @@
 [submodule "devices/Dell_PowerEdge_Servers"]
 	path = devices/Dell_PowerEdge_Servers
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Dell_PowerEdge_Servers.git
+[submodule "devices/TP-LINK_AV1000_TL-PA7017"]
+	path = devices/TP-LINK_AV1000_TL-PA7017
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_TP-LINK_AV1000_TL-PA7017.git
