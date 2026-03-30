@@ -1,6 +1,8 @@
 # Do not commit non-sharable firmware.
 firmware-copyrighted/
 
+video/
+
 # .gitmodules is ignored so that links to private firmware-copyrighted repos don't get shared with the public.
 # Even if you don't mind disclosing the URL, the repo itself should not be publicly accessible,
 # and thus will error out when others run `git clone --recursive`.
