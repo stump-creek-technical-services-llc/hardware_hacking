@@ -55,3 +55,6 @@
 [submodule "devices/TP-LINK_AV1000_TL-PA7017"]
 	path = devices/TP-LINK_AV1000_TL-PA7017
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_TP-LINK_AV1000_TL-PA7017.git
+[submodule "devices/NETGEAR_C3000"]
+	path = devices/NETGEAR_C3000
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_NETGEAR_C3000.git
