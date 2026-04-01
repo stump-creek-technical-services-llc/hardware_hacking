@@ -70,3 +70,6 @@
 [submodule "tools/Maikrt_USB_TO_TTL_v287"]
 	path = tools/Maikrt_USB_TO_TTL_v287
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Maikrt_USB_TO_TTL_v287.git
+[submodule "tools/Adafruit_FT232H_Breakout_2246"]
+	path = tools/Adafruit_FT232H_Breakout_2246
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Adafruit_FT232H_Breakout_2246.git
