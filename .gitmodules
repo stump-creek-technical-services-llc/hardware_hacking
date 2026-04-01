@@ -73,3 +73,6 @@
 [submodule "tools/Adafruit_FT232H_Breakout_2246"]
 	path = tools/Adafruit_FT232H_Breakout_2246
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Adafruit_FT232H_Breakout_2246.git
+[submodule "tools/Adafruit_MCP2221A_Breakout_4471"]
+	path = tools/Adafruit_MCP2221A_Breakout_4471
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Adafruit_MCP2221A_Breakout_4471.git
