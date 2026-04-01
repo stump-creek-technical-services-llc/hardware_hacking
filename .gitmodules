@@ -61,3 +61,6 @@
 [submodule "tools/Teyleten_Robot_FT4232HL-5V_3.3V"]
 	path = tools/Teyleten_Robot_FT4232HL-5V_3.3V
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Teyleten_Robot_FT4232HL-5V_3.3V.git
+[submodule "tools/CP2102_USB-TTL_BOARD_v3.0"]
+	path = tools/CP2102_USB-TTL_BOARD_v3.0
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_CP2102_USB-TTL_BOARD_v3.0.git
