@@ -67,3 +67,6 @@
 [submodule "tools/Diymall_HM-11"]
 	path = tools/Diymall_HM-11
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Diymall_HM-11.git
+[submodule "tools/Maikrt_USB_TO_TTL_v287"]
+	path = tools/Maikrt_USB_TO_TTL_v287
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Maikrt_USB_TO_TTL_v287.git
