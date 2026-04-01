@@ -64,3 +64,6 @@
 [submodule "tools/CP2102_USB-TTL_BOARD_v3.0"]
 	path = tools/CP2102_USB-TTL_BOARD_v3.0
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_CP2102_USB-TTL_BOARD_v3.0.git
+[submodule "tools/Diymall_HM-11"]
+	path = tools/Diymall_HM-11
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Diymall_HM-11.git
