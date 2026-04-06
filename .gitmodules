@@ -76,3 +76,6 @@
 [submodule "tools/Adafruit_MCP2221A_Breakout_4471"]
 	path = tools/Adafruit_MCP2221A_Breakout_4471
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_Adafruit_MCP2221A_Breakout_4471.git
+[submodule "devices/EASYSLEEP_EWN-I2"]
+	path = devices/EASYSLEEP_EWN-I2
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_EASYSLEEP_EWN-I2.git
