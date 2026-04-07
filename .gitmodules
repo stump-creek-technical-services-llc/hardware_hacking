@@ -79,3 +79,6 @@
 [submodule "devices/EASYSLEEP_EWN-I2"]
 	path = devices/EASYSLEEP_EWN-I2
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_EASYSLEEP_EWN-I2.git
+[submodule "devices/TP-LINK_Kasa_Smart_Wi-Fi_Plug_Mini_HS103_v5.8"]
+	path = devices/TP-LINK_Kasa_Smart_Wi-Fi_Plug_Mini_HS103_v5.8
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_TP-LINK_Kasa_Smart_Wi-Fi_Plug_Mini_HS103_v5.8.git
