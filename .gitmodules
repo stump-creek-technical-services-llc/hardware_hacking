@@ -85,3 +85,6 @@
 [submodule "devices/NETGEAR_ASG1100"]
 	path = devices/NETGEAR_ASG1100
 	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_NETGEAR_ASG1100.git
+[submodule "devices/NETGEAR_C6250"]
+	path = devices/NETGEAR_C6250
+	url = git@github.com:stump-creek-technical-services-llc/hardware_hacking_NETGEAR_C6250.git
